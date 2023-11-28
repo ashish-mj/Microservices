@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>DealBazaar</title>
+    <link rel="stylesheet" href="../static/css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/order.css">
+    <link rel="icon" href="../static/images/logo.png" type="image/jpg">
+  </head>
+  <body>
+    <header>
+        <div class="row">
+            <img alt="DB" class="logo" src="../static/images/logo.png">
+            <h1>DealBazaar</h1>
+            <a href="{{url_for('home')}}" class="button">Home</a>
+        </div>
+        <div class="row">
+            <h1 class="tagline">Buy. Think. Grow.</h1>
+        </div>
+        <form action="{{url_for('order')}}" class="form" method="post">
+
+            {% for item in data %}
+            <div class="card">
+                  <img src= {{ item.url }} alt="Product Image" style="width:100%">
+                  </br>
+                  <h2>{{ item.productName}}</h2>
+                  <p class="price">&#x20B9; {{ item.price}}</p>
+                  <p>{{ item.description}}</p>
+                <div class="incrementButton">
+                     <input type="number" id="inputQuantitySelectorSm" class="form-control" aria-live="polite" data-bs-step="counter" name={{item["productId"]}} title="quantity" value="0" min="0" max="10" step="1" data-bs-round="0" aria-label="Quantity selector">
+                     <button type="button" class="btn btn-icon btn-secondary btn-sm" aria-describedby="inputQuantitySelectorSm" data-bs-step="down"></button>
+                     <button type="button" class="btn btn-icon btn-secondary btn-sm" aria-describedby="inputQuantitySelectorSm" data-bs-step="up"</button>
+                </div>
+            </div>
+
+            {% endfor %}
+
+            <div class="row">
+                <h1 class="tagline">Fill the details</h1>
+            </div>
+            <div class="row">
+                <div class="col span-2-0f-3">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-2-0f-3">
+                    <input type="tel" name="mobile" id="mobile" placeholder="Your Mobile Number" pattern="[6-9][0-9]{9}" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-4-0f-6">
+                    <input type="email" name="email" id="email" placeholder="Your Email ID" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-2-0f-3">
+                    <input type="text" name="address" id="address" placeholder="Your Address" required>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+</header>
+  </body>
+</html>

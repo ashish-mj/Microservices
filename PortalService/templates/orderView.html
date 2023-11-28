@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>DealBazaar</title>
+    <link rel="stylesheet" href="../static/css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/orderView.css">
+    <link rel="icon" href="../static/images/logo.png" type="image/jpg">
+  </head>
+  <body>
+    <header>
+        <div class="row">
+            <img alt="DB" class="logo" src="../static/images/logo.png">
+            <h1>DealBazaar</h1>
+            <a href="{{url_for('home')}}" class="button">Home</a>
+        </div>
+
+
+  <div class="container-fluid">
+
+<div class="container">
+  <div class="order">
+    <h1 class="h5 mb-0">{{ data["orderId"] }}</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="mb-3 d-flex justify-content-between">
+            <div class="detail">
+              <span class="me-3">{{ data["contact"]["name"] }}</span>
+              <span class="me-3">{{ data["submittedAt"] }}</span>
+            </div>
+          </div>
+          <hr>
+          </br>
+          <table class="table table-borderless">
+            <tbody>
+            {% for item in data["orderItems"] %}
+              <tr class="tableRow">
+                <td>
+                  <div class="d-flex mb-2">
+                    <div class="flex-lg-grow-1 ms-3">
+                      <h2 class="small mb-0">{{item["productName"]}}</h2>
+                    </div>
+                  </div>
+                </td>
+                <td><h3>{{item["quantity"]}}</h3></td>
+                <td class="text-end"><h2>&#x20B9; {{item["price"]}}</h2></td>
+              </tr>
+            {% endfor %}
+            </tbody>
+            <tfoot>
+              <tr class="fw-bold">
+                <td colspan="2"><h1>TOTAL</h1></td>
+                <td class="text-end"><h2>&#x20B9; {{ data["totalCost"] }}</h2> </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </div>
+</header>
+  </body>
+</html>

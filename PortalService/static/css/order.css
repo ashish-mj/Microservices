@@ -1,0 +1,126 @@
+.box{
+    background-color: white;
+    padding-left: 10px;
+}
+
+.logo{
+    float: left;
+    width: 7.5%;
+    height: 7.5%;
+    margin-top: 10px;
+    margin-left:10px;
+}
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+
+padding-left: 20px;
+font-size: 300%;
+color:white;
+}
+
+.tagline{
+font-size : 400%;
+text-align:center;
+margin-top: 50px;
+}
+.main{
+margin-top: 100px;
+}
+
+.button {
+  float:right;
+  display: inline-block;
+  color: white;
+  background-color:#4CAF50;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-decoration: none;
+  margin-right: 20px;
+  margin-top : -75px;
+}
+
+.button:link,
+.button:visited
+{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2;
+}
+
+.button:hover,
+.button:active
+{
+    background-color: #45a049;
+}
+.card,input[type=submit] {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: white;
+  font-size: 30px;
+}
+p,h2{
+color: white;
+margin-top:-2px;
+}
+
+.incrementButton{
+margin-bottom: 30px;
+}
+
+ input[type=submit]{
+  float:center;
+  display: inline-block;
+  color: white;
+  background-color:#4CAF50;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-decoration: none;
+  margin-left: 650px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+input[type=submit]:link,
+input[type=submit]:visited
+{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active
+{
+    background-color: #45a049;
+}
+
+#name ,#mobile ,#email , #address{
+margin-left: 435px;
+width: 90%;
+padding: 7px;
+border-radius: 3px;
+border: 1px solid #ccc;
+}
+

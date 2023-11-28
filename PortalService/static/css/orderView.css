@@ -1,0 +1,102 @@
+.box{
+    background-color: white;
+    padding-left: 10px;
+}
+
+.logo{
+    float: left;
+    width: 7.5%;
+    height: 7.5%;
+    margin-top: 10px;
+    margin-left:10px;
+}
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+h1{
+
+padding-left: 20px;
+font-size: 300%;
+color:white;
+}
+
+.tagline{
+font-size : 400%;
+text-align:center;
+margin-top: 50px;
+}
+.main{
+margin-top: 100px;
+}
+
+.button {
+  float:right;
+  display: inline-block;
+  color: white;
+  background-color:#4CAF50;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-decoration: none;
+  margin-right: 20px;
+  margin-top : -75px;
+}
+
+.button:link,
+.button:visited
+{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2;
+}
+
+.button:hover,
+.button:active
+{
+    background-color: #45a049;
+}
+
+.order{
+text-align: center;
+}
+
+.detail,.order{
+   color: white;
+}
+.detail span{
+ padding-right:150px;
+}
+.card {
+    box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+}
+.card {
+    margin-left : 550px;
+}
+.text-reset {
+    --bs-text-opacity: 1;
+    color: inherit!important;
+}
+
+.table{
+color : white;
+}
+
+.tableRow td{
+padding-right : 80px;
+float: left:
+}
+
+hr{
+width : 43%;
+float : left;
+}
+

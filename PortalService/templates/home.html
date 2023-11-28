@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>DealBazaar</title>
+    <link rel="stylesheet" href="../static/css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="icon" href="../static/images/logo.png" type="image/jpg">
+  </head>
+  <body>
+    <header>
+        <div class="row">
+            <img alt="DB" class="logo" src="../static/images/logo.png">
+            <h1>DealBazaar</h1>
+        </div>
+        <div class="row">
+            <h1 class="tagline">Buy. Think. Grow.</h1>
+        </div>
+        <div class="row">
+            <div class="main">
+                <div class="col span-2-of-5">
+                    <a href="{{url_for('order')}}" class="button">Order Now</a>
+                </div>
+                <div class="col span-3-of-5">
+                    <a href="{{url_for('viewOrder')}}" class="button">View Order</a>
+                </div>
+            </div>
+        </div>
+    </header>
+  </body>
+</html>

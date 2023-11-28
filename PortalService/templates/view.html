@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>DealBazaar</title>
+    <link rel="stylesheet" href="../static/css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/view.css">
+    <link rel="icon" href="../static/images/logo.png" type="image/jpg">
+  </head>
+  <body>
+    <header>
+        <div class="row">
+            <img alt="DB" class="logo" src="../static/images/logo.png">
+            <h1>DealBazaar</h1>
+            <a href="{{url_for('home')}}" class="button">Home</a>
+        </div>
+        <div class="row">
+            <h1 class="tagline">Buy. Think. Grow.</h1>
+        </div>
+        <form action="{{url_for('viewOrder')}}" class="viewOrder-form" method="post">
+            <div class="row">
+                <div class="col span-2-of-5">
+                    <input type="text" name="orderId" id="orderId" placeholder="Your OrderId" required>
+                </div>
+                <div class="col span-3-of-5">
+                    <input type="submit" value="Search">
+                </div>
+            </div>
+        </form>
+    </header>
+  </body>
+</html>
