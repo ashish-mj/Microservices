@@ -1,6 +1,8 @@
 # Microservices -DealBazaar
 
-DealBazaar application that allows users to place an order and view an order
+[DealBazaar](https://ashishmj.medium.com/build-microservices-with-python-63fd35fa3baa) application that allows users to place an order and view an order.
+
+[Medium blog](https://ashishmj.medium.com/build-microservices-with-python-63fd35fa3baa)
 
 ## About this repository
 
